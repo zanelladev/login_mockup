@@ -34,6 +34,14 @@ class LoginPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              SizedBox(height: deviceInfo.size.height * 0.15),
+              SizedBox(
+                width: deviceInfo.size.width * 0.50,
+                child: Image.asset(
+                  'assets/images/main_icon.png',
+                  fit: BoxFit.fill,
+                ),
+              ),
               SizedBox(
                 width: deviceInfo.size.width * 0.75,
                 child: Text(
@@ -50,6 +58,7 @@ class LoginPage extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
               ),
+              SizedBox(height: deviceInfo.size.height * 0.05),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   foregroundColor: Colors.white,
@@ -62,6 +71,7 @@ class LoginPage extends StatelessWidget {
                 onPressed: () {},
                 child: const Text('Sign Up with Email ID'),
               ),
+              SizedBox(height: deviceInfo.size.height * 0.01),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   foregroundColor: Colors.grey,
@@ -76,6 +86,7 @@ class LoginPage extends StatelessWidget {
                   'Sign Up with Google',
                 ),
               ),
+              const SizedBox(height: 100),
               SizedBox(
                 width: deviceInfo.size.width * 0.75,
                 child: Center(
