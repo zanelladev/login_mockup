@@ -72,8 +72,31 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {},
-                child: const Text('Sign Up with Google'),
-              )
+                child: const Text(
+                  'Sign Up with Google',
+                ),
+              ),
+              SizedBox(
+                width: deviceInfo.size.width * 0.75,
+                child: Center(
+                  child: RichText(
+                    text: TextSpan(
+                      style: theme.textTheme.bodyMedium,
+                      children: const [
+                        TextSpan(
+                          text: 'Alread have an account? ',
+                        ),
+                        TextSpan(
+                          text: 'Sign in',
+                          style: TextStyle(
+                            decoration: TextDecoration.underline,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),

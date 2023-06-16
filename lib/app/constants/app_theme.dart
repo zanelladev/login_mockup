@@ -14,6 +14,12 @@ ThemeData defaultTheme = ThemeData(
       fontSize: 20,
       fontWeight: FontWeight.normal,
     ),
+    bodyMedium: TextStyle(
+      color: Colors.white,
+      fontFamily: "Roboto",
+      fontSize: 16,
+      fontWeight: FontWeight.normal,
+    ),
   ),
   colorScheme: const ColorScheme(
     background: Colors.black,
