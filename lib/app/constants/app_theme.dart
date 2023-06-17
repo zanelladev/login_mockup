@@ -11,7 +11,7 @@ ThemeData defaultTheme = ThemeData(
     displayMedium: TextStyle(
       color: Color.fromARGB(255, 130, 130, 134),
       fontFamily: "Roboto",
-      fontSize: 20,
+      fontSize: 22,
       fontWeight: FontWeight.normal,
     ),
     bodyMedium: TextStyle(
